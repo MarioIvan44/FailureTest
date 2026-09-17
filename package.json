@@ -1,0 +1,39 @@
+{
+  "name": "e-commers-inventory-api",
+  "version": "1.0.0",
+  "description": "API Express/MongoDB para inventario de tienda de moda y panel administrativo de e-commers",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "generate-template": "node src/scripts/generateExcelTemplate.js",
+    "create-inventario": "node src/scripts/createInventarioFile.js"
+  },
+  "keywords": [
+    "express",
+    "mongodb",
+    "inventario",
+    "moda"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cloudinary": "^2.8.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "express-validator": "^7.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^9.10.1",
+    "morgan": "^1.10.1",
+    "multer": "^2.4.0",
+    "nanoid": "^5.1.6",
+    "nodemailer": "^7.0.11",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}

@@ -1,0 +1,5 @@
+export const generateVerificationCode = () => {
+  // Genera un código de 6 dígitos
+  return Math.floor(100000 + Math.random() * 900000).toString();
+};
+
